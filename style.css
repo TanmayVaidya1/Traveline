@@ -1,0 +1,491 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /*border: 2px solid black;*/
+}
+
+.flex-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-left {
+  text-align: center;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item-center {
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.social i {
+  margin: 5px;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-container>a {
+  margin: 10px;
+  text-align: center;
+}
+
+.main {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.sub {
+  height: 230px;
+  width: 230px;
+  position: relative;
+
+
+}
+
+.grids {
+  background-color: beige;
+  padding: 20px;
+}
+
+.sub1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: auto;
+  width: auto;
+
+  position: relative;
+}
+
+.sub2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.sub3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: auto;
+  position: relative;
+}
+
+
+.con1 {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  left: 265px;
+  top: 280px;
+  background-color: burlywood;
+}
+
+.con2 {
+  height: 200px;
+  width: 272px;
+  left: 0px;
+  top: 150px;
+  position: absolute;
+  background-color: burlywood;
+}
+
+.con3 {
+  height: 110px;
+  width: 230px;
+  position: absolute;
+  top: 120px;
+  background-color: burlywood;
+}
+
+.con4 {
+  height: 110px;
+  width: 230px;
+  position: absolute;
+  top: 120px;
+  background-color: burlywood;
+}
+
+#but{
+  position: relative;
+  top:35px;
+  left: 50px;
+  color:black
+}
+
+
+
+.contact-gallery{
+  height: auto;
+  width: 80%;
+  margin-left: 200px;
+}
+.contact-item{
+  height: 500px;
+  width: 1000px;
+  padding: 20px;
+  display: inline-block;
+  margin: 45px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+  background-image: url('https://images.unsplash.com/photo-1604213410393-89f141bb96b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.contact-item img{
+  height: 200px;
+  width: 800px;
+  border-radius: 20px;
+  margin-left: 60px;
+}
+
+.contact-item h1{
+  margin-left: 85px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#hotel_img{
+  width: 99%;
+  height: 300px;
+  padding: 15px;
+}
+
+.park-name{
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+/*For Smartphones*/
+@media (max-width: 480px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item-center div h1 {
+    margin-left: 60px;
+  }
+
+  .flex-item-right div ul {
+    margin-left: 60px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .sub {
+    height: 200px;
+    width: 98%;
+    background-color:  burlywood;
+    position: relative;
+  }
+
+  .con1{
+    height: 100px;
+    width: 150px;
+    background-color:  burlywood;
+    position: relative;
+    top: 100px;
+    left: 47px;
+  }
+  .con2{
+    height: 100px;
+    width: 150px;
+    background-color:  burlywood;
+    position: absolute;
+    top: 100px;
+    left:47px;
+  }
+  .con3{
+    height: 100px;
+    width: 150px;
+    background-color:  burlywood;
+    position: absolute;
+    top: 100px;
+    left:47px;
+  }
+  .con4{
+    height: 100px;
+    width: 150px;
+    background-color:  burlywood;
+    position: absolute;
+    top: 100px;
+    left:47px;
+  }
+
+  .grids {
+    background-color: beige;
+  }
+
+  #heading{
+    font-size: 12px;
+  }
+
+  #head-para{
+    font-size: 9px;
+  }
+
+  #heading_2{
+    font-size: 12px;
+  }
+
+  #head-para_2{
+    font-size: 8px;
+  }
+   
+  
+  #des{
+    font-size: 12px;
+  }
+  
+  #but{
+    position: relative;
+    top:35px;
+    left: 20px;
+    color:black
+  }
+
+  .contact-gallery{
+    height: 500px;
+    width: auto;
+    margin-left: 2px;
+  }
+  .contact-item{
+    height: 450px;
+    width: 300px;
+    padding: 20px;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+  }
+  
+  .contact-item img{
+    height: 100px;
+    width: 250px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item h1{
+    margin-left: 15px;
+  }
+
+  #hotel_img{
+    width: 380px;
+    height: 120px;
+    padding: 15px;
+  }
+  #desc2{
+    margin-top: 0px;
+  }
+  #desc22{
+    padding-left: 0px;
+    padding-right:0px;
+  }
+  #desc3{
+    text-align: left; 
+    margin-bottom:0px
+  }
+  #desc33{
+    font-size: 20px;
+  }
+
+  .stable{
+    position: relative;
+    right:20px;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .flex-item-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    height: auto;
+    width: 93%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .sub {
+    height: 130px;
+    width: 130px;
+
+    background-color:  burlywood;
+
+  }
+
+  .grids {
+    background-color: beige;
+
+  }
+
+  .sub1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+
+  .sub2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+
+  .sub3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: auto;
+    position: relative;
+  }
+
+  .con1 {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    left: 148px;
+    top: 140px;
+    background-color:  burlywood;
+  }
+
+  .con2 {
+    height: 190px;
+    width: 135px;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    background-color:  burlywood;
+  }
+
+  .con3 {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background-color:  burlywood;
+  }
+
+  .con4 {
+    height: 50px;
+    width: 130px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background-color:  burlywood;
+  }
+
+  #heading{
+    font-size: 18px;
+  }
+
+  #head-para{
+    font-size: 9px;
+  }
+
+  #heading_2{
+    font-size: 15px;
+  }
+
+  #head-para_2{
+    font-size: 10px;
+  }
+   
+  
+  #des{
+    font-size: 8px;
+  }
+
+  #but{
+    position: relative;
+    top:10px;
+    left: 5px;
+    color:black
+  }
+
+  .contact-gallery{
+    height: auto;
+    width: 80%;
+    margin-left: 20px;
+  }
+  .contact-item{
+    height: 500px;
+    width: 700px;
+    padding: 20px;
+    display: inline-block;
+    margin: 45px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+  }
+  
+  .contact-item img{
+    height: 200px;
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item h1{
+    margin-left: 85px;
+    margin-bottom: 10px;
+  }
+
+  #hotel_img{
+    width: 98%;
+    height: 300px;
+    padding: 15px;
+  }
+ 
+}
